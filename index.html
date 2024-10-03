@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Clientes - Bunker Gym</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Bunker Gym</h1>
+        </header>
+        <form id="clientForm">
+            <div class="form-group">
+                <input type="text" id="nombre" name="nombre" required placeholder="Nombre">
+            </div>
+            <div class="form-group">
+                <input type="text" id="apellido" name="apellido" required placeholder="Apellido">
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" name="email" required placeholder="Email">
+            </div>
+            <div class="form-group">
+                <input type="tel" id="telefono" name="telefono" required placeholder="Teléfono">
+            </div>
+            <div class="form-group">
+                <input type="date" id="fechaInscripcion" name="fechaInscripcion" required>
+            </div>
+            <div class="form-group">
+                <select id="estado" name="estado" required>
+                    <option value="">Estado</option>
+                    <option value="activo">Activo</option>
+                    <option value="inactivo">Inactivo</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <select id="modoCuota" name="modoCuota" required>
+                    <option value="">Modo de Cuota</option>
+                    <option value="1">1 día a la semana</option>
+                    <option value="2">2 días a la semana</option>
+                    <option value="3">3 días a la semana</option>
+                    <option value="4">4 días a la semana</option>
+                    <option value="5">5 días a la semana</option>
+                    <option value="6">6 días a la semana</option>
+                </select>
+            </div>
+            <button type="submit">Registrar Cliente</button>
+            <div id="progressContainer">
+                <div id="progressBar"></div>
+            </div>
+            <div id="message"></div>
+        </form>
+    </div>
+</body>
+
+</html>

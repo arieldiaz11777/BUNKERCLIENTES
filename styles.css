@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    /* Fondo negro */
+    color: #fff;
+    /* Texto blanco */
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    /* Fondo con opacidad */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 165, 0, 0.7);
+    position: relative;
+    overflow: hidden;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #ff4500;
+    /* Naranja brillante */
+    text-shadow: 2px 2px 8px rgba(255, 0, 0, 0.8);
+    /* Sombra roja */
+}
+
+.form-group {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+input,
+select,
+button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ff4500;
+    /* Borde naranja */
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Fondo de campo con opacidad */
+    color: #fff;
+    /* Texto blanco */
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input::placeholder,
+select::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+input:focus,
+select:focus {
+    border-color: #ff4500;
+    /* Cambiar color de borde al enfocar */
+}
+
+button {
+    background-color: #ff4500;
+    /* Naranja */
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff6700;
+    /* Naranja más claro al pasar el ratón */
+}
+
+#progressContainer {
+    width: 100%;
+    background-color: #555;
+    /* Fondo de la barra de progreso */
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+#progressBar {
+    width: 0;
+    height: 10px;
+    background-color: #ff4500;
+    /* Color de la barra de progreso */
+    transition: width 0.5s;
+}
+
+#message {
+    margin-top: 15px;
+    text-align: center;
+    color: #ff4500;
+    /* Color del mensaje */
+}
+
+body {
+    background: url('bunker.jpg') no-repeat center center fixed;
+    background-size: cover;
+    /* Ajusta la imagen al tamaño de la ventana */
+}
